@@ -54,8 +54,8 @@ jobs:
     # - name: Build with Gradle 8.9
     #   run: gradle build
 
-  dependency-submission:
-
+  ependency-submission:
+    needs: build  # Ensure dependency-submission only runs after build is successful
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -68,9 +68,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    publish:
-
-        needs: build
+  
 
 
     # Generates and submits a dependency graph, enabling Dependabot Alerts for all project dependencies.
