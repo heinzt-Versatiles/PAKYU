@@ -54,7 +54,7 @@ jobs:
     # - name: Build with Gradle 8.9
     #   run: gradle build
 
-  ependency-submission:
+  dependency-submission:
     needs: build  # Ensure dependency-submission only runs after build is successful
     runs-on: ubuntu-latest
     permissions:
