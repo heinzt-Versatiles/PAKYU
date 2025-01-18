@@ -18,8 +18,11 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
+          context: .  # Set the context to the root directory of your repo
+          file: ./Dockerfile  # Specify the Dockerfile path if it's in a subfolder
           push: true
           tags: user/app:latest
+
 
   build-with-matrix:
     runs-on: ${{ matrix.os }}
