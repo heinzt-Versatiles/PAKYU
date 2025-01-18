@@ -62,6 +62,6 @@ jobs:
         push: true
         tags: heinzt/myapp:latest
 
-  env:
-    ACTIONS_RUNNER_DEBUG: true
-    ACTIONS_STEP_DEBUG: true
+env:
+  ACTIONS_RUNNER_DEBUG: true
+  ACTIONS_STEP_DEBUG: true
