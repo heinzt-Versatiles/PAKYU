@@ -26,5 +26,3 @@ jobs:
         with:
           push: true
           tags: heinzt/myapp:latest
-          secrets: |
-            GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
