@@ -1,4 +1,5 @@
 name: Simple CI Pipeline
+
 on:
   push:
     branches:
